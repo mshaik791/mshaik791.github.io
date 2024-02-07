@@ -31656,18 +31656,16 @@ var _213Png = require("../images/loaders/shapes/213.png");
 var _213PngDefault = parcelHelpers.interopDefault(_213Png);
 var _220Jpg = require("../images/loaders/shapes/220.jpg");
 var _220JpgDefault = parcelHelpers.interopDefault(_220Jpg);
-var _pic1Jpg = require("../images/pics/pic1.jpg");
-var _pic1JpgDefault = parcelHelpers.interopDefault(_pic1Jpg);
-var _pic2Jpg = require("../images/pics/pic2.jpg");
-var _pic2JpgDefault = parcelHelpers.interopDefault(_pic2Jpg);
 var _pic3Png = require("../images/pics/pic3.png");
 var _pic3PngDefault = parcelHelpers.interopDefault(_pic3Png);
-var _pic5Png = require("../images/pics/pic5.png");
-var _pic5PngDefault = parcelHelpers.interopDefault(_pic5Png);
+var _pic2Jpg = require("../images/pics/pic2.jpg");
+var _pic2JpgDefault = parcelHelpers.interopDefault(_pic2Jpg);
+var _pic6Jpg = require("../images/pics/pic6.jpg");
+var _pic6JpgDefault = parcelHelpers.interopDefault(_pic6Jpg);
+var _pic1Jpg = require("../images/pics/pic1.jpg");
+var _pic1JpgDefault = parcelHelpers.interopDefault(_pic1Jpg);
 var _pic4Png = require("../images/pics/pic4.png");
 var _pic4PngDefault = parcelHelpers.interopDefault(_pic4Png);
-var _pic6Png = require("../images/pics/pic6.png");
-var _pic6PngDefault = parcelHelpers.interopDefault(_pic6Png);
 const images = {
     bg1: (0, _19JpgDefault.default),
     bg2: (0, _24JpgDefault.default),
@@ -31675,16 +31673,16 @@ const images = {
     bg4: (0, _44JpgDefault.default),
     bg5: (0, _213PngDefault.default),
     bg6: (0, _220JpgDefault.default),
-    me1: (0, _pic1JpgDefault.default),
+    me1: (0, _pic3PngDefault.default),
     me2: (0, _pic2JpgDefault.default),
-    me3: (0, _pic3PngDefault.default),
-    me4: (0, _pic5PngDefault.default),
+    me3: (0, _pic6JpgDefault.default),
+    me4: (0, _pic1JpgDefault.default),
     me5: (0, _pic4PngDefault.default),
-    me6: (0, _pic6PngDefault.default)
+    me6: (0, _pic6JpgDefault.default)
 };
 exports.default = images;
 
-},{"../images/loaders/shapes/19.jpg":"kced3","../images/loaders/shapes/24.jpg":"bAxgR","../images/loaders/shapes/26.jpg":"hZpuU","../images/loaders/shapes/44.jpg":"iDelJ","../images/loaders/shapes/213.png":"hD4ey","../images/loaders/shapes/220.jpg":"coESE","../images/pics/pic1.jpg":"igHXJ","../images/pics/pic2.jpg":"cEqNp","../images/pics/pic3.png":"kJSaE","../images/pics/pic5.png":"7DpyV","../images/pics/pic4.png":"95rsQ","../images/pics/pic6.png":"84Ezq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kced3":[function(require,module,exports) {
+},{"../images/loaders/shapes/19.jpg":"kced3","../images/loaders/shapes/24.jpg":"bAxgR","../images/loaders/shapes/26.jpg":"hZpuU","../images/loaders/shapes/44.jpg":"iDelJ","../images/loaders/shapes/213.png":"hD4ey","../images/loaders/shapes/220.jpg":"coESE","../images/pics/pic1.jpg":"igHXJ","../images/pics/pic2.jpg":"cEqNp","../images/pics/pic3.png":"kJSaE","../images/pics/pic4.png":"95rsQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../images/pics/pic6.jpg":"s32x8"}],"kced3":[function(require,module,exports) {
 module.exports = require("717d3004ae636402").getBundleURL("dTrKr") + "19.29723c87.jpg" + "?" + Date.now();
 
 },{"717d3004ae636402":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -31746,15 +31744,12 @@ module.exports = require("d6df1e17eb52577b").getBundleURL("dTrKr") + "pic2.e7f18
 },{"d6df1e17eb52577b":"lgJ39"}],"kJSaE":[function(require,module,exports) {
 module.exports = require("8ab231f4c4b4e121").getBundleURL("dTrKr") + "pic3.bcd8151d.png" + "?" + Date.now();
 
-},{"8ab231f4c4b4e121":"lgJ39"}],"7DpyV":[function(require,module,exports) {
-module.exports = require("59eb5cce9ea70907").getBundleURL("dTrKr") + "pic5.6b4a3a22.png" + "?" + Date.now();
-
-},{"59eb5cce9ea70907":"lgJ39"}],"95rsQ":[function(require,module,exports) {
+},{"8ab231f4c4b4e121":"lgJ39"}],"95rsQ":[function(require,module,exports) {
 module.exports = require("aca7174b5a6cae83").getBundleURL("dTrKr") + "pic4.426e860d.png" + "?" + Date.now();
 
-},{"aca7174b5a6cae83":"lgJ39"}],"84Ezq":[function(require,module,exports) {
-module.exports = require("a1e9b4298541dca3").getBundleURL("dTrKr") + "pic6.c358e6b7.png" + "?" + Date.now();
+},{"aca7174b5a6cae83":"lgJ39"}],"s32x8":[function(require,module,exports) {
+module.exports = require("3520ee88ecc745fc").getBundleURL("dTrKr") + "pic6.df783632.jpg" + "?" + Date.now();
 
-},{"a1e9b4298541dca3":"lgJ39"}]},["bPZme","iMJJo"], "iMJJo", "parcelRequire2041")
+},{"3520ee88ecc745fc":"lgJ39"}]},["bPZme","iMJJo"], "iMJJo", "parcelRequire2041")
 
 //# sourceMappingURL=index.0679deea.js.map
