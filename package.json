@@ -2,8 +2,9 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
+    "start": "npx parcel index.html",
+    "build": "rm -rf dist/ && npx parcel build index.html --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -12,12 +13,11 @@
     "defaults"
   ],
   "devDependencies": {
-    "@parcel/packager-raw-url": "^2.11.0",
-    "@parcel/transformer-glsl": "^2.11.0",
-    "@parcel/transformer-sass": "^2.11.0",
-    "@parcel/transformer-webmanifest": "^2.11.0",
-    "parcel": "^2.11.0",
-    "parcel-bundler": "^1.12.5"
+    "@parcel/packager-raw-url": "^2.12.0",
+    "@parcel/transformer-glsl": "^2.12.0",
+    "@parcel/transformer-sass": "^2.12.0",
+    "@parcel/transformer-webmanifest": "^2.12.0",
+    "parcel": "^2.12.0"
   },
   "dependencies": {
     "gsap": "^3.12.5",

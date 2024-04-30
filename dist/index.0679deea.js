@@ -142,15 +142,16 @@
       this[globalName] = mainExports;
     }
   }
-})({"bPZme":[function(require,module,exports) {
+})({"iEVQ4":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
+var HMR_USE_SSE = false;
 module.bundle.HMR_BUNDLE_ID = "a1d5ef9e0679deea";
 "use strict";
-/* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
+/* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
   HMRMessage,
@@ -189,6 +190,7 @@ declare var HMR_HOST: string;
 declare var HMR_PORT: string;
 declare var HMR_ENV_HASH: string;
 declare var HMR_SECURE: boolean;
+declare var HMR_USE_SSE: boolean;
 declare var chrome: ExtensionContext;
 declare var browser: ExtensionContext;
 declare var __parcel__import__: (string) => Promise<void>;
@@ -232,7 +234,8 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== "undefined") {
         "0.0.0.0"
     ].includes(hostname) ? "wss" : "ws";
     var ws;
-    try {
+    if (HMR_USE_SSE) ws = new EventSource("/__parcel_hmr");
+    else try {
         ws = new WebSocket(protocol + "://" + hostname + (port ? ":" + port : "") + "/");
     } catch (err) {
         if (err.message) console.error(err.message);
@@ -302,12 +305,14 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== "undefined") {
             }
         }
     };
-    ws.onerror = function(e) {
-        if (e.message) console.error(e.message);
-    };
-    ws.onclose = function() {
-        console.warn("[parcel] \uD83D\uDEA8 Connection to the HMR server was lost");
-    };
+    if (ws instanceof WebSocket) {
+        ws.onerror = function(e) {
+            if (e.message) console.error(e.message);
+        };
+        ws.onclose = function() {
+            console.warn("[parcel] \uD83D\uDEA8 Connection to the HMR server was lost");
+        };
+    }
 }
 function removeErrorOverlay() {
     var overlay = document.getElementById(OVERLAY_ID);
@@ -31682,7 +31687,7 @@ const images = {
 };
 exports.default = images;
 
-},{"../images/loaders/shapes/19.jpg":"kced3","../images/loaders/shapes/24.jpg":"bAxgR","../images/loaders/shapes/26.jpg":"hZpuU","../images/loaders/shapes/44.jpg":"iDelJ","../images/loaders/shapes/213.png":"hD4ey","../images/loaders/shapes/220.jpg":"coESE","../images/pics/pic1.jpg":"igHXJ","../images/pics/pic2.jpg":"cEqNp","../images/pics/pic3.png":"kJSaE","../images/pics/pic4.png":"95rsQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../images/pics/pic6.jpg":"s32x8"}],"kced3":[function(require,module,exports) {
+},{"../images/loaders/shapes/19.jpg":"kced3","../images/loaders/shapes/24.jpg":"bAxgR","../images/loaders/shapes/26.jpg":"hZpuU","../images/loaders/shapes/44.jpg":"iDelJ","../images/loaders/shapes/213.png":"hD4ey","../images/loaders/shapes/220.jpg":"coESE","../images/pics/pic3.png":"kJSaE","../images/pics/pic2.jpg":"cEqNp","../images/pics/pic6.jpg":"s32x8","../images/pics/pic1.jpg":"igHXJ","../images/pics/pic4.png":"95rsQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kced3":[function(require,module,exports) {
 module.exports = require("717d3004ae636402").getBundleURL("dTrKr") + "19.29723c87.jpg" + "?" + Date.now();
 
 },{"717d3004ae636402":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -31735,21 +31740,21 @@ module.exports = require("19061b73a1c1bad9").getBundleURL("dTrKr") + "213.0ce30a
 },{"19061b73a1c1bad9":"lgJ39"}],"coESE":[function(require,module,exports) {
 module.exports = require("17678139a582fac8").getBundleURL("dTrKr") + "220.3e2f6469.jpg" + "?" + Date.now();
 
-},{"17678139a582fac8":"lgJ39"}],"igHXJ":[function(require,module,exports) {
-module.exports = require("bfbbebcaea421c35").getBundleURL("dTrKr") + "pic1.de6a9fcc.jpg" + "?" + Date.now();
-
-},{"bfbbebcaea421c35":"lgJ39"}],"cEqNp":[function(require,module,exports) {
-module.exports = require("d6df1e17eb52577b").getBundleURL("dTrKr") + "pic2.e7f186a5.jpg" + "?" + Date.now();
-
-},{"d6df1e17eb52577b":"lgJ39"}],"kJSaE":[function(require,module,exports) {
+},{"17678139a582fac8":"lgJ39"}],"kJSaE":[function(require,module,exports) {
 module.exports = require("8ab231f4c4b4e121").getBundleURL("dTrKr") + "pic3.bcd8151d.png" + "?" + Date.now();
 
-},{"8ab231f4c4b4e121":"lgJ39"}],"95rsQ":[function(require,module,exports) {
-module.exports = require("aca7174b5a6cae83").getBundleURL("dTrKr") + "pic4.426e860d.png" + "?" + Date.now();
+},{"8ab231f4c4b4e121":"lgJ39"}],"cEqNp":[function(require,module,exports) {
+module.exports = require("d6df1e17eb52577b").getBundleURL("dTrKr") + "pic2.e7f186a5.jpg" + "?" + Date.now();
 
-},{"aca7174b5a6cae83":"lgJ39"}],"s32x8":[function(require,module,exports) {
+},{"d6df1e17eb52577b":"lgJ39"}],"s32x8":[function(require,module,exports) {
 module.exports = require("3520ee88ecc745fc").getBundleURL("dTrKr") + "pic6.df783632.jpg" + "?" + Date.now();
 
-},{"3520ee88ecc745fc":"lgJ39"}]},["bPZme","iMJJo"], "iMJJo", "parcelRequire2041")
+},{"3520ee88ecc745fc":"lgJ39"}],"igHXJ":[function(require,module,exports) {
+module.exports = require("bfbbebcaea421c35").getBundleURL("dTrKr") + "pic1.de6a9fcc.jpg" + "?" + Date.now();
+
+},{"bfbbebcaea421c35":"lgJ39"}],"95rsQ":[function(require,module,exports) {
+module.exports = require("aca7174b5a6cae83").getBundleURL("dTrKr") + "pic4.426e860d.png" + "?" + Date.now();
+
+},{"aca7174b5a6cae83":"lgJ39"}]},["iEVQ4","iMJJo"], "iMJJo", "parcelRequire2041")
 
 //# sourceMappingURL=index.0679deea.js.map
